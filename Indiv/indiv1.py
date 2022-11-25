@@ -8,7 +8,8 @@ if __name__ == '__main__':
         print("size isn't right", file=sys.stderr)
         exit(1)
     s = 0
-    for item in A:
-        if (abs(item) > 3) and (abs(item) < 8):
-            s += item
+    for ind, val in enumerate(A):
+        if (abs(val) > 3) and (abs(val) < 8):
+            s += val
     print(s)
+

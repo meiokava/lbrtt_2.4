@@ -10,16 +10,13 @@ if __name__ == '__main__':
     max_ = a[0]
     pos = 0
     max_ = max(a)
-    b = []
-    for ind, val in enumerate(a):
-        if val > 0:
-            pos += val
+    for i in a:
+        if i > 0:
+            pos += i
         else:
             break
-    for i, item in enumerate(a):
-        if not((abs(item) > rn1) and (abs(item) < rn2)):
-            b.append(item)
-    while len(b) < len(a):
-        b.append(0)
-    print(b)
+    c = [i for i in a if not((abs(i) > rn1) and (abs(i) < rn2))]
+    while len(c) < len(a):
+        c.append(0)
+    print(c)
     print('\nmaximum is: ', max_, '\nsum is: ', pos)

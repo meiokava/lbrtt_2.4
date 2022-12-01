@@ -20,3 +20,4 @@ if __name__ == '__main__':
         c.append(0)
     print(c)
     print('\nmaximum is: ', max_, '\nsum is: ', pos)
+

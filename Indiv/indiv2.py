@@ -7,7 +7,6 @@ if __name__ == '__main__':
     a = list(map(float, input().split()))
     rn1 = float(input("range 1: "))
     rn2 = float(input("range 2: "))
-    max_ = a[0]
     pos = 0
     max_ = max(a)
     for i in a:
@@ -20,4 +19,5 @@ if __name__ == '__main__':
         c.append(0)
     print(c)
     print('\nmaximum is: ', max_, '\nsum is: ', pos)
+
 
